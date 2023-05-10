@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function Section() {
+export default function Section(props) {
   return (
-    <div className="text-white ">
+    <div {...props}>
       <h5 className="mb-4 font-bold uppercase ">Title</h5>
 
       <ul className="flex flex-col list-none gap-y-1">
