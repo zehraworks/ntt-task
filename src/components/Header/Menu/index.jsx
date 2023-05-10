@@ -10,10 +10,10 @@ export default function Menu() {
         <li>Menu Item</li>
         <li>Menu Item</li>
         <li>Menu Item</li>
-        <li className="hidden sm:flex md:hidden">More</li>
-        <li className="sm:hidden md:flex">Menu Item</li>
-        <li className="sm:hidden md:flex">Menu Item</li>
-        <li className="sm:hidden md:flex">Menu Item</li>
+        <li className="hidden sm:flex lg:hidden">More</li>
+        <li className="sm:hidden lg:flex">Menu Item</li>
+        <li className="sm:hidden lg:flex">Menu Item</li>
+        <li className="sm:hidden lg:flex">Menu Item</li>
       </ul>
     </div>
   );
