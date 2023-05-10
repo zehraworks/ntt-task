@@ -1,4 +1,5 @@
 import React from "react";
+import Category from "./Category";
 
 export default function Search() {
   return (
@@ -25,15 +26,10 @@ export default function Search() {
         <div class="sm:w-3/4 flex justify-between grow sm:grow-0 border-[1px] border-solid border-neutral-300 rounded">
           <input
             type="search"
-            className=" bg-transparent px-3 py-[0.25rem] text-base font-normal  text-neutral-700 outline-offset-0"
+            className="bg-transparent px-3 py-[0.25rem] text-base font-normal  text-neutral-700 outline-offset-0"
             placeholder="Search"
           />
-          <button
-            class="rounded-r border-primary px-6 py-2 text-xs font-medium text-primary bg-gray-100 focus:outline-none focus:ring-0 hidden sm:block"
-            type="button"
-          >
-            Category
-          </button>
+          <Category />
         </div>
         <button className="bg-blue-800 text-white rounded border-[1px] border-blue-800 px-6 py-2 text-xs">
           Search
