@@ -1,7 +1,6 @@
 import React from "react";
 import Menu from "./Menu";
 import Search from "./Search";
-import Photo from "../Photo";
 
 export default function Header() {
   return (
