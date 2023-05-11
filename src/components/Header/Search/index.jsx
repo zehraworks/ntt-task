@@ -17,13 +17,13 @@ export default function Search() {
         <div class="sm:w-3/4 flex justify-between grow sm:grow-0 border-[1px] border-solid border-neutral-300 rounded">
           <input
             type="search"
-            className="bg-transparent px-3 py-[0.25rem] text-base font-normal  text-neutral-700 outline-offset-0"
+            className="bg-transparent px-3 py-[0.25rem] text-base font-normal  text-neutral-700 outline-offset-0 w-full"
             placeholder="Search"
           />
           <Category />
         </div>
-        <button className="bg-blue-800 text-white rounded border-[1px] border-blue-800 px-6 py-2 text-xs">
-          Search
+        <button className="bg-blue-800 rounded border-[1px] border-blue-800 px-6 py-2 text-xs">
+          <img src="/src/assets/search.svg"  />
         </button>
       </div>
     </div>
