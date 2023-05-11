@@ -1,7 +1,18 @@
 import React from "react";
 import Heart from "../../../assets/heart.svg";
+import { useSelector } from "react-redux";
 
-export default function Title() {
+export default function Title({ isFiltered, setIsFiltered }) {
+  const toggleFiltered = () => {
+    setIsFiltered(!isFiltered);
+  };
+
+  const products = useSelector((state) => state.products.data);
+
+  const countFavorite = products.filter(
+    (product) => product.isFavorited
+  ).length;
+
   return (
     <div className="h-24 flex items-center justify-between">
       <h1 className="text-lg sm:text-xl md:text-2xl font-bold">Products</h1>
@@ -12,9 +23,14 @@ export default function Title() {
             src={Heart}
             alt="heart"
           />
-          <p className="text-sm sm:text-lg">0 ürün</p>
+          <p className="text-sm sm:text-lg">{countFavorite} ürün</p>
         </div>
-        <button className="bg-blue-800 text-white text-sm sm:text-base py-1 sm:px-3 px-2 rounded">
+        <button
+          onClick={toggleFiltered}
+          className={` ${
+            isFiltered ? "bg-slate-100 border-[1px] border-blue-800 text-blue-900" : "bg-blue-800 text-white"
+          }  text-sm sm:text-base py-1 sm:px-3 px-2 rounded`}
+        >
           Favorites
         </button>
       </div>
