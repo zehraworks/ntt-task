@@ -67,9 +67,9 @@ export default function Menu() {
         <p>Menu Item</p>
         <p>Menu Item</p>
         <p>Menu Item</p>
-        <p className="hidden sm:flex lg:hidden">
-          <More />
-        </p>
+
+        <More className="hidden sm:flex lg:hidden" />
+
         <p className="sm:hidden lg:flex">Menu Item</p>
         <p className="sm:hidden lg:flex">Menu Item</p>
         <p className="sm:hidden lg:flex">Menu Item</p>

@@ -42,7 +42,7 @@ const StyledMenu = styled((props) => (
   },
 }));
 
-export default function More() {
+export default function More({ props }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -53,7 +53,7 @@ export default function More() {
   };
 
   return (
-    <div>
+    <div {...props}>
       <Button
         sx={{ display: { sm: "flex", xs: "none" } }}
         id="demo-customized-button"
