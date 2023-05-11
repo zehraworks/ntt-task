@@ -1,6 +1,7 @@
 import React from "react";
 import { addFavorite } from "../../../../redux/productsSlice";
 import { useDispatch } from "react-redux";
+import heartIcon from "../../../../assets/heart.svg"
 
 export default function Card({
   id,
@@ -25,7 +26,7 @@ export default function Card({
           isFavorited ? "bg-pink-200" : "bg-slate-100"
         } absolute flex justify-center items-center rounded-full  w-12 h-12 right-1 top-1`}
       >
-        <img src="/src/assets/heart.svg" alt="fav" />
+        <img src={heartIcon} alt="fav" />
       </button>
       <img className="rounded-t-sm" src={imageUrl} alt="" />
 

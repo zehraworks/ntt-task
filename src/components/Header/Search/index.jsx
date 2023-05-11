@@ -1,6 +1,7 @@
 import React from "react";
 import Category from "./Category";
 import TemporaryDrawer from "./Drawer";
+import searchIcon from "../../../assets/search.svg"
 
 export default function Search() {
   return (
@@ -23,7 +24,7 @@ export default function Search() {
           <Category />
         </div>
         <button className="bg-blue-800 rounded border-[1px] border-blue-800 px-6 py-2 text-xs">
-          <img src="/src/assets/search.svg"  />
+          <img src={searchIcon}  />
         </button>
       </div>
     </div>
