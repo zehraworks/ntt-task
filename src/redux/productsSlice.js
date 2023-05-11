@@ -10,7 +10,7 @@ export const fetchProducts = createAsyncThunk("fetchProducts", async () => {
 
 const initialState = {
   data: [],
-  loading: false,
+  loading: true,
   error: "",
 };
 
@@ -28,18 +28,18 @@ export const productsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchProducts.pending, (state) => {
-        state.loading = "true";
+        state.loading = true;
         state.error = "";
       })
       .addCase(fetchProducts.fulfilled, (state, action) => {
-        state.loading = "false";
+        state.loading = false;
         state.data = action.payload.map((product) => ({
           ...product,
           isFavorited: false,
         }));
       })
       .addCase(fetchProducts.rejected, (state) => {
-        state.loading = "false";
+        state.loading = false;
         state.error = "Error fetching products";
       });
   },

@@ -1,8 +1,6 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import Bg1 from "../../../public/bg-1.png";
-import Bg2 from "../../../public/bg-2.png";
 
 export default function Slider() {
   return (
@@ -14,10 +12,10 @@ export default function Slider() {
       useKeyboardArrows
     >
       <div>
-        <img src={Bg1} alt="bg" />
+        <img src="/bg-1.png" alt="bg" />
       </div>
       <div>
-        <img src={Bg2} alt="bg" />
+        <img src="/bg-2.png" alt="bg" />
       </div>
     </Carousel>
   );
