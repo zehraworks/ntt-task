@@ -46,7 +46,7 @@ export default function Cards({ isFiltered }) {
     <>
       <Box
         sx={{
-          maxWidth: 400,
+          maxWidth: 340,
           flexGrow: 1,
           display: { xs: "block", sm: "none" },
           marginX: "auto"
