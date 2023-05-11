@@ -1,25 +1,16 @@
 import React from "react";
 import Category from "./Category";
+import TemporaryDrawer from "./Drawer";
 
 export default function Search() {
   return (
     <div className="container mx-auto w-5/6 sm:w-full flex flex-col sm:flex-row justify-between py-5">
-      <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-blue-800">NTT DATA</h1>
-        <svg
-          className="flex sm:hidden w-6 h-6 "
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"
-          />
-        </svg>
+      <div className="flex sm:mr-10 justify-between items-center">
+        <img className="h-6 sm:h-8" src="/logo.svg" alt="" />
+
+        <div className="flex justify-center items-center sm:hidden w-6 h-6 ">
+          <TemporaryDrawer />
+        </div>
       </div>
 
       <div className="w-full sm:w-5/6 flex justify-between mt-3 sm:mt-0">
