@@ -14,7 +14,7 @@ export default function Search() {
       </div>
 
       <div className="w-full sm:w-5/6 flex justify-between mt-3 sm:mt-0">
-        <div class="sm:w-3/4 flex justify-between grow sm:grow-0 border-[1px] border-solid border-neutral-300 rounded">
+        <div className="sm:w-3/4 flex justify-between grow sm:grow-0 border-[1px] border-solid border-neutral-300 rounded">
           <input
             type="search"
             className="bg-transparent px-3 py-[0.25rem] text-base font-normal  text-neutral-700 outline-offset-0 w-full"
