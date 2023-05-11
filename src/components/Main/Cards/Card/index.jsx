@@ -18,7 +18,7 @@ export default function Card({
   };
 
   return (
-    <div className="w-full sm:w-32 md:w-60 border-[1px] border-blue-800 rounded relative">
+    <div className="w-full sm:w-32 md:w-1/2 lg:w-1/4 border-[1px] border-blue-800 rounded relative">
       <button
         onClick={() => toggleFavorite(id)}
         className={`${
