@@ -41,7 +41,7 @@ const StyledMenu = styled((props) => (
   },
 }));
 
-export default function More({ props }) {
+export default function More(props) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
